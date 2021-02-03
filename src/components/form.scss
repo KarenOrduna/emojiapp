@@ -1,0 +1,45 @@
+.form {
+  margin: 30px;
+  .searchbar {
+    width: 60%;
+    height: 25px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: turquoise;
+    outline: none;
+    padding: 10px;
+    margin: 40px;
+    text-align: center;
+    :focus {
+      outline: none;
+    }
+  }
+}
+
+.button {
+  margin-top: 20px;
+  width: 25%;
+  background-color: turquoise;
+  border-style: none;
+  border-radius: 15px;
+  font-size: 15px;
+  color: whitesmoke;
+  outline: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+  .searchbar {
+    width: 10%;
+    text-align: center;
+  }
+  .button {
+    width: 20%;
+  }
+}

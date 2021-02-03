@@ -1,0 +1,44 @@
+.word-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.word {
+  max-width: 15rem;
+  margin: 40px;
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 whitesmoke, 0 5px 20px grey;
+  background-color: #fff;
+  transition: all 100ms ease-in-out;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  dt {
+    color: #2ec2b0;
+    line-height: 1;
+    p {
+      font-size: 200%;
+      font-weight: 900;
+    }
+    .emoji {
+      margin: 0 auto 20px;
+      display: block;
+      font-size: 400%;
+    }
+    dd {
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+      font-size: inherit;
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .word-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+  }
+}
