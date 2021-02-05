@@ -3,7 +3,6 @@ import './definition.scss';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import './form.scss';
-import DefinitionDetails from './definitiondetail';
 
 const Definition = () => {
   const [emojis, setEmoji] = useState([]);
