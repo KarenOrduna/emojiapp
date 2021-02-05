@@ -4,7 +4,7 @@ import './header.scss';
 const Header = () => {
   return (
     <div className='header'>
-      <h1>Emoji </h1>
+      <h1>Emojix</h1>
     </div>
   );
 };

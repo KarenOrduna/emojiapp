@@ -8,6 +8,7 @@ const onSubmit = (data) => {
 
 const Form = () => {
   const { register, handleSubmit } = useForm();
+
   return (
     <div className='form'>
       <form onSubmit={handleSubmit(onSubmit)}>

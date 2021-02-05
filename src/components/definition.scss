@@ -13,7 +13,8 @@
   transition: all 100ms ease-in-out;
   overflow-wrap: break-word;
   word-wrap: break-word;
-
+  height: 300px;
+  width: 500px;
   dt {
     color: #2ec2b0;
     line-height: 1;
@@ -33,12 +34,33 @@
       text-align: right;
     }
   }
+
+  .button-div {
+    align-items: center;
+  }
+
+  .button-definition {
+    width: 100%;
+    background-color: turquoise;
+    margin-top: 40px;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #84a9ac;
+    outline: none;
+    padding: 15px;
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .word-container {
     display: flex;
-    justify-content: space-between;
-    align-content: stretch;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .word {
+    height: 300px;
+    width: 500px;
   }
 }
